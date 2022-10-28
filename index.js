@@ -7,11 +7,13 @@ const cors = require('cors')
 const connectDB = require('./config/connectDB')
 const route = require('./routes')
 const corsOptionsDelegate = require('./config/corsOptions')
+const credentials = require('./middleware/credentials')
 const PORT = process.env.PORT || 5000
 
 connectDB()
 
 app.use(express.json())
+app.use(credentials)
 app.use(cors(corsOptionsDelegate))
 
 route(app)
