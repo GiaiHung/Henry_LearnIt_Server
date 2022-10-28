@@ -1,6 +1,6 @@
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://quiet-cliffs-06205.herokuapp.com',
+  'https://henryleanrit.netlify.app',
   'http://127.0.0.1:5173',
   'https://google.com',
 ]
